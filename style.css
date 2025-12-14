@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif}
+
+body{
+    color:#1f2937;
+    line-height:1.7}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:72px;
+    background:#fff;
+    border-bottom:1px solid #e5e7eb;
+    z-index:100;
+}
+
+.nav-wrapper{
+    height:72px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar nav a{
+    margin-left:20px;
+    color:#374151;
+    text-decoration:none;
+    font-weight:500}
+    
+.hamburger{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:5px;
+}
+
+.hamburger span{
+  width:26px;
+  height:3px;
+  background:#1f2937;
+  border-radius:2px;
+  transition:0.3s;
+}
+    
+.logo{
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.hero{
+    min-height:calc(100vh - 72px);
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#eef2ff,#f9fafb);
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center}
+
+.hero-action{
+  display:flex;
+  gap:16px;
+}
+
+.hero h1{
+    font-size:40px}
+
+.hero h2{
+    font-size:24px;
+    color:#4f46e5;
+    margin:10px 0}
+
+.hero p{
+    margin-bottom:25px}
+
+.hero-image img{
+    width: 400px;
+    height:400px;
+    object-fit:cover;
+    border-radius:10%;
+    margin-top: 50px;
+    margin-left:60px;
+    display:block;
+    box-shadow:0 15px 35px rgba(79,70,229,.25);
+    }
+
+.section{
+    padding:70px 0}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:20px}
+
+.section-desc{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 30px}
+
+.bg-light{
+    background:#f9fafb}
+
+.bg-dark{
+    background:#111827;
+    color:white}
+
+.skills-grid,.project-grid,.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px}
+
+.skill-card,.project-card,.certificate-card,.experience-card{
+    background:white;
+    text-align:justify;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05)}
+
+.project-card img,.certificate-card img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:15px}
+
+.project-card{
+    cursor:pointer;
+    transition:.3s}
+
+.project-card:hover{
+    transform:translateY(-8px)}
+
+.experience-card{
+    margin-bottom:30px}
+
+.btn{
+    padding:12px 30px;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:500}
+
+.btn.primary{
+    background:#4f46e5;
+    color:white}
+
+.btn.outline{
+    border:2px solid #4f46e5;
+    color:#4f46e5;
+    background:transparent}
+
+.btn.secondary{
+    background:#e0e7ff;
+    color:#3730a3}
+
+.certificate-card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}    
+
+.center{
+    text-align:center;
+    margin-top:30px}
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px}
+
+.contact-form input,.contact-form textarea{
+    padding:15px;
+    border-radius:10px;
+    border:none}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    background:#f3f4f6}
+
+@media (max-width: 768px) {
+
+  /* sembunyikan nav desktop */
+  .navbar nav{
+    display:none;
+  }
+
+  .hero{
+    padding-top:30px;
+  }
+
+  .hero-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:32px;
+  }
+
+  /* urutan: foto dulu, teks setelahnya */
+  .hero-image{
+    order:1;
+  }
+
+  .hero-text{
+    order:2;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .hero h2{
+    font-size:18px;
+  }
+
+  .hero-image img{
+    width:180px;
+    height:220px;
+    border-radius:14px;
+  }
+
+    .hero-action{
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    width:100%;
+  }
+
+  .hero-action .btn{
+    width: 60%;
+    max-width:100%;
+    font-size: 100%;
+    text-align:center;
+  }
+
+  .hamburger{
+    display:flex;
+  }
+
+  .nav-menu{
+    position:absolute;
+    top:70px;
+    right:5%;
+    width:220px;
+    background:#ffffff;
+    flex-direction:column;
+    gap:16px;
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    display:none;
+    z-index:99;
+  }
+
+  .nav-menu a{
+    margin:0;
+    font-size:15px;
+    width:100%;
+    text-align:left;
+  }
+
+  .nav-menu.active{
+    display:flex;
+  }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iqbal Julyansyah | Web Developer & Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-wrapper">
+    <div class="logo">PORTOFOLIO</div>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm Iqbal Julyansyah</h1>
+      <h2>Web Developer & Data Analyst</h2>
+      <p>
+        Mahasiswa Teknik Informatika Universitas Pamulang yang berfokus pada pengembangan web modern 
+        serta analisis data untuk menghasilkan insight yang bernilai.
+      </p>
+    <div class="hero-action">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/Pas Foto .jpg" alt="Profile Photo" />
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-desc">
+    Saya adalah mahasiswa aktif tahun kedua Program Studi Teknik Informatika Universitas Pamulang dengan minat kuat 
+    pada bidang Web Development dan Data Analysis. Saya terbiasa mengembangkan website dengan pendekatan yang terstruktur, 
+    responsif, serta mudah dikembangkan kembali, sekaligus mengolah data mentah menjadi informasi yang bernilai dan mudah dipahami.
+    </p>
+    <p class="section-desc">
+    Dalam perjalanan akademik dan non-akademik, saya aktif terlibat dalam berbagai organisasi, kepanitiaan, serta program 
+    pengembangan diri. Pengalaman tersebut membentuk kemampuan saya dalam komunikasi, manajemen waktu, kerja tim, serta pemecahan 
+    masalah secara sistematis. Saya memiliki ketertarikan besar pada pemanfaatan teknologi untuk mendukung efisiensi kerja dan pengambilan 
+    keputusan berbasis data.
+    </p>
+    <p class="section-desc">
+    Saya terbiasa berpikir kritis, adaptif terhadap teknologi baru, dan memiliki semangat belajar yang tinggi untuk terus 
+    meningkatkan kompetensi teknis maupun non-teknis sebagai bekal berkarier di dunia profesional.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>
+          Berpengalaman dalam membangun website statis hingga dinamis dengan struktur kode yang rapi dan 
+          mudah dikembangkan.
+        </p><br>
+        <ul>
+          <li>HTML5 & Semantic Markup</li>
+          <li>CSS3, Flexbox, Grid</li>
+          <li>JavaScript (DOM, Event, Validation)</li>
+          <li>PHP (Basic)</li>
+          <li>MySQL Database</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Data Analysis & Productivity</h3>
+        <p>
+          Mampu mengolah, menganalisis, dan memvisualisasikan data untuk menghasilkan insight yang jelas 
+          dan mudah dipahami.
+        </p><br>
+        <ul>
+            <li>Data Analysis & Reporting</li>
+            <li>Data Visualization</li>
+            <li>Microsoft Excel (Formula, Pivot)</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Google Sheets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">
+      Berikut beberapa project yang pernah saya kerjakan. Setiap project dapat dikembangkan dan ditambahkan 
+      kembali sesuai kebutuhan di masa mendatang.
+    </p>
+    <div class="project-grid">
+      <div class="project-card" onclick="openProject('sia.page.gd')">
+        <img src="project/apotek.png" />
+        <div class="project-content">
+          <h3>Sistem Informasi Apotek</h3>
+          <p>
+            Sistem Informasi Apotek berbasis web yang mengelola data obat, kategori, stok, 
+            dan transaksi penjualan. Dilengkapi fitur pencatatan otomatis, monitoring stok, 
+            serta laporan periodik untuk meningkatkan akurasi data dan efisiensi proses administrasi apotek.
+          </p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openProject('https://kantingo.lovestoblog.com/')">
+        <img src="project/kantingo.png" />
+        <div class="project-content">
+          <h3>KantinGO!</h3>
+          <p>
+            KantinGO! merupakan platform rekomendasi makanan dan minuman berbasis web yang 
+            menyajikan informasi kantin, menu, harga, serta menu favorit berdasarkan tingkat pembelian. 
+            Sistem ini membantu mahasiswa Universitas Pamulang memilih kuliner sesuai selera dan budget secara efisien.
+          </p>
+        </div>
+      </div>
+      <div class="project-card" onclick="openProject('#')">
+        <img src="project/portofolio.png" />
+        <div class="project-content">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Website portofolio pribadi yang dirancang untuk menampilkan profil, keahlian, project, 
+            serta pengalaman secara profesional dan terstruktur. Website ini menjadi media personal 
+            branding yang merepresentasikan kompetensi, minat, dan perjalanan pengembangan diri di bidang teknologi informasi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+    <div class="container">
+    <h2 class="section-title">Experience & Activities</h2>
+        <div class="experience-card">
+            <h3>Project Assistant – Lembaga Kemahasiswaan dan Alumni</h3>
+            <span style="font-weight: 600;">Universitas Pamulang | Januari 2025 – Januari 2026</span>
+            <p>Bertanggung jawab dalam pengelolaan dan validasi database beasiswa mahasiswa, memastikan kelengkapan dan akurasi data hingga 100%. 
+                Saya juga berperan dalam analisis data penerima bantuan untuk mendukung proses pelaporan dan pengambilan keputusan, serta mendukung 
+                kebutuhan desain grafis untuk publikasi internal lembaga. Kontribusi ini membantu meningkatkan efisiensi proses administrasi dan 
+                mempercepat alur verifikasi data beasiswa secara signifikan.</p>
+        </div>
+        <div class="experience-card">
+        <h3>Koordinator Web Development – Informatics Study Club</h3>
+        <span style="font-weight: 600;">Universitas Pamulang | Mei 2024 – Mei 2025</span>
+        <p>Memimpin dan mengoordinasikan kegiatan pengembangan web di lingkungan klub, mulai dari perencanaan materi, pembagian tugas, hingga evaluasi
+            hasil project. Saya membimbing anggota dalam memahami dasar hingga implementasi web development melalui proyek nyata. Peran ini melatih 
+            kemampuan kepemimpinan, komunikasi teknis, serta manajemen proyek dalam tim yang kolaboratif.</p>
+        </div>
+        <div class="experience-card">
+        <h3>Participant - NovoClub Batch 3</h3>
+        <span style="font-weight: 600;">Paragon Corp | Januari – Desember 2024</span>
+        <p>Mengikuti program bootcamp pengembangan diri yang diselenggarakan oleh Paragon Corp dengan fokus pada penguatan soft skill, 
+            komunikasi profesional, dan kepemimpinan. Program ini melibatkan berbagai aktivitas kolaboratif, studi kasus, serta pelatihan intensif. 
+            Terpilih sebagai koordinator kegiatan Offline Activity perdana di wilayah yang ditunjuk, bertanggung jawab atas perencanaan, koordinasi tim, 
+            serta pelaksanaan acara hingga berjalan dengan lancar dan meningkatkan keterlibatan peserta.</p>
+        </div>
+        <div class="experience-card">
+        <h3>Ketua Pelaksana – Informatics Competition</h3>
+        <span style="font-weight: 600;">Universitas Pamulang | November 2024</span>
+        <p>Bertanggung jawab penuh atas perencanaan, koordinasi, dan pelaksanaan acara Informatics Competition tingkat kampus. Mengelola tim, 
+            menyusun konsep kegiatan, serta memastikan seluruh rangkaian acara berjalan sesuai rencana. Pengalaman ini memperkuat kemampuan 
+            manajemen acara, kepemimpinan, serta pengambilan keputusan dalam situasi dinamis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificate-grid" id="certificateGrid">
+      <!-- 3 utama (langsung tampil) -->
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT SOFTWARE DEVELOPMENT.jpg">
+        <h3>Software Development</h3>
+      </div>
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT DATA ANALISIS.jpg">
+        <h3>Data Analysis</h3>
+      </div>
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT JAVASCRIPT.jpg">
+        <h3>JavaScript</h3>
+      </div>
+
+      <!-- Sertifikat tambahan (hidden dulu) -->
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT MICROSOFT EXCEL.jpg">
+        <h3>Microsoft Excel</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT INFORMATICS COMPETITION.jpg">
+        <h3>Informatics Competition</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT ISC KOORDINATOR WEB DEVELOPMENT.jpg">
+        <h3>Koordinator Web Development</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP TI.jpg">
+        <h3>Workshop Teknik Informatika</h3>
+      </div>      
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP AI.jpg">
+        <h3>Workshop AI</h3>
+      </div>        
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT DICODING.jpg">
+        <h3>Dicoding</h3>
+      </div>  
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT MAGANG LKA1.jpg">
+        <img src="sertifikat/SERTIFIKAT MAGANG LKA2.jpg">
+        <h3>Internship</h3>
+      </div> 
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR1.jpg">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR2.jpg">
+        <h3>Workshop Bimbingan Karir</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT HAK CIPTA1.jpg">
+        <img src="sertifikat/SERTIFIKAT HAK CIPTA2.jpg">
+        <h3>Hak Cipta</h3>
+      </div>                          
+    </div>
+
+    <div class="center">
+      <button class="btn secondary" id="toggleCertificateBtn">
+        View More Certificates
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section bg-dark">
+  <div class="container">
+    <h2 class="section-title light">Contact Me</h2>
+    <form id="contactForm" class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Iqbal Julyansyah. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
